@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  min-height: 0;
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
+
+header, footer {
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header li.logo {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  body.works_on_smartphone {
+    display: block;
+  }
+  body.works_on_smartphone main {
+    display: block;
+  }
+}
